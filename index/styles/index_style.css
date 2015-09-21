@@ -1,0 +1,51 @@
+body
+{
+    background-color: antiquewhite;
+    text-align: center;
+}
+
+.header
+{
+	position: absolute;
+	width: 1000px;
+	height: 50px;
+	background: red;
+}
+
+.autor
+{
+	position: absolute;
+	top: 70px;
+	width: 150px;
+	height: 200px;
+	background: #fe0;
+}
+
+.posts .posttitle
+{
+	position: absolute;
+	top: 70px;
+	left: 170px;
+	width: 840px;
+	height: 50px;
+	background: green;
+}
+
+.posts .posttext
+{
+	position: absolute;
+	top: 130px;
+	left: 170px;
+	width: 840px;
+	height: 250px;
+	background: lime;
+}
+
+.footer
+{
+	position: absolute;
+	bottom: 0;
+	width: 1000px;
+	height: 50px;
+	background: blue;
+}
