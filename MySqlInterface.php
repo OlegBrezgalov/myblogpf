@@ -39,14 +39,30 @@
 
 		$resultset = $mysqli->query('SELECT * FROM Post ORDER BY postdate LIMIT 5');
 		
+		//test
+		//var_dump($resultset);
+		//
+
 		$counter = 0;
 		while ($row = $resultset->fetch_assoc()) 
     	{
+    		//test
+    		//var_dump($row);
+    		//echo '</br>';
+    		//
     		$resultarray[$counter] = $row;
     		$counter = $counter + 1;
     	}
 
 		$resultset->close();
-		$mysqli->close();	
+		$mysqli->close();
+		return $resultarray;	
+	}
+
+	function ParsePost($Post, &$PostTitle, &$PostText, &$PostDate)
+	{
+		$PostTitle = $Post['title'];
+		$PostText = $Post['posttext'];
+		$PostDate = $Post['postdate'];
 	}
 ?>

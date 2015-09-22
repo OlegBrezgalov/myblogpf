@@ -41,6 +41,16 @@ body
 	background: lime;
 }
 
+.posts .postsignature
+{
+	position: absolute;
+	background: grey;
+	top: 390px;
+	left: 170px;
+	width: 840px;
+	height: 50px;
+}
+
 .footer
 {
 	position: absolute;
